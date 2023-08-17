@@ -42,9 +42,9 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>subsystem</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-09T16:48:39Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
-  <cp:lastModifiedBy>antaeug</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-08-14T15:52:42Z</dcterms:modified>
-  <cp:revision>2.5</cp:revision>
+  <cp:lastModifiedBy>tu101</cp:lastModifiedBy>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-08-17T10:20:00Z</dcterms:modified>
+  <cp:revision>2.6</cp:revision>
   <cp:version>R2023a</cp:version>
 </cp:coreProperties>
 
@@ -66,11 +66,11 @@ __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version information for MathWorks R2023a Release -->
 <MathWorks_version_info>
-  <version>9.14.0.2254940</version>
+  <version>9.14.0.2206163</version>
   <release>R2023a</release>
-  <description>Update 2</description>
-  <date>Apr 17 2023</date>
-  <checksum>277877666</checksum>
+  <description></description>
+  <date>Feb 22 2023</date>
+  <checksum>2058108452</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -105,11 +105,11 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 <ModelInformation Version="1.0">
   <Subsystem>
     <P Name="ModelUUID">58d0a4cd-5a2e-4951-baa7-b33f13aae8de</P>
-    <P Name="LastSavedArchitecture">maci64</P>
+    <P Name="LastSavedArchitecture">win64</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:2.5&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:2.6&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -984,8 +984,8 @@ __MWOPC_PART_BEGIN__ /simulink/hdlParams.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2023a_20220628">
-  <System type="System" uuid="886da064-de67-4ea9-a2be-23bc6fe5c68d">
-    <Interface type="Interface" uuid="609d1e90-bada-40af-9ebc-c6e296ee5ff3"/>
+  <System type="System" uuid="27548082-046c-48be-bb38-feb03b90bca4">
+    <Interface type="Interface" uuid="4104bc43-d6eb-4469-a177-ff5480b7d675"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/modelMask.xml
@@ -1162,8 +1162,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_11.xml
 __MWOPC_PART_BEGIN__ /simulink/systems/system_24.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[0, 25, 1720, 1440]</P>
-  <P Name="ZoomFactor">125</P>
+  <P Name="Location">[-1, -7, 1537, 817]</P>
   <Block BlockType="Inport" Name="SpdRef" SID="25">
     <P Name="Position">[-205, 103, -175, 117]</P>
     <P Name="ZOrder">-2</P>
@@ -1402,7 +1401,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[16, 135, 1156, 775]</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">55894</P>
+  <P Name="SIDHighWatermark">55905</P>
   <Block BlockType="Inport" Name="VehSpdRef" SID="1">
     <P Name="Position">[-30, 63, 0, 77]</P>
     <P Name="ZOrder">26258</P>
@@ -1443,7 +1442,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <Block BlockType="Constant" Name="Constant1" SID="55361">
     <P Name="Position">[365, 330, 395, 360]</P>
     <P Name="ZOrder">26300</P>
-    <P Name="Value">0.3</P>
+    <P Name="Value">0.7</P>
   </Block>
   <Block BlockType="BusCreator" Name="Create1" SID="5">
     <PortCounts in="1" out="1"/>
@@ -1661,52 +1660,52 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Port">5</P>
   </Block>
   <Line>
-    <P Name="ZOrder">373</P>
+    <P Name="ZOrder">407</P>
     <P Name="Src">11#out:1</P>
     <P Name="Points">[41, 0]</P>
     <Branch>
-      <P Name="ZOrder">372</P>
+      <P Name="ZOrder">406</P>
       <P Name="Dst">10#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">371</P>
+      <P Name="ZOrder">405</P>
       <P Name="Points">[0, 55]</P>
       <P Name="Dst">24#in:1</P>
     </Branch>
   </Line>
   <Line>
     <P Name="Name">&lt;MotorSpd&gt;</P>
-    <P Name="ZOrder">374</P>
+    <P Name="ZOrder">408</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">23#out:1</P>
     <P Name="Dst">24#in:2</P>
   </Line>
   <Line>
     <P Name="Name">TrqCmd</P>
-    <P Name="ZOrder">375</P>
+    <P Name="ZOrder">409</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">24#out:1</P>
     <P Name="Points">[193, 0; 0, 20]</P>
     <P Name="Dst">7#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">376</P>
+    <P Name="ZOrder">410</P>
     <P Name="Src">1#out:1</P>
     <P Name="Dst">11#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">377</P>
+    <P Name="ZOrder">411</P>
     <P Name="Src">4#out:1</P>
     <P Name="Dst">52358#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">378</P>
+    <P Name="ZOrder">412</P>
     <P Name="Src">2#out:1</P>
     <P Name="Dst">22#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Motor&gt;</P>
-    <P Name="ZOrder">379</P>
+    <P Name="ZOrder">413</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">22#out:1</P>
     <P Name="Points">[38, 0; 0, -25]</P>
@@ -1714,14 +1713,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">MotorSpdRef</P>
-    <P Name="ZOrder">380</P>
+    <P Name="ZOrder">414</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">9#out:1</P>
     <P Name="Dst">5#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Info</P>
-    <P Name="ZOrder">381</P>
+    <P Name="ZOrder">415</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">5#out:1</P>
     <P Name="Points">[90, 0]</P>
@@ -1729,7 +1728,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">Vehicle</P>
-    <P Name="ZOrder">382</P>
+    <P Name="ZOrder">416</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">6#out:1</P>
     <P Name="Points">[90, 0]</P>
@@ -1737,7 +1736,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">MotorDrive</P>
-    <P Name="ZOrder">383</P>
+    <P Name="ZOrder">417</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">7#out:1</P>
     <P Name="Points">[90, 0]</P>
@@ -1745,38 +1744,38 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">BatteryHV</P>
-    <P Name="ZOrder">384</P>
+    <P Name="ZOrder">418</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">8#out:1</P>
     <P Name="Dst">38#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Battery&gt;</P>
-    <P Name="ZOrder">385</P>
+    <P Name="ZOrder">419</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">22#out:2</P>
     <P Name="Dst">55573#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">386</P>
+    <P Name="ZOrder">420</P>
     <P Name="Src">52338#out:1</P>
     <P Name="Dst">52355#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">387</P>
+    <P Name="ZOrder">421</P>
     <P Name="Src">52339#out:1</P>
     <P Name="Dst">52357#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;MotorTemp&gt;</P>
-    <P Name="ZOrder">388</P>
+    <P Name="ZOrder">422</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">23#out:2</P>
     <P Name="Dst">52352#in:1</P>
   </Line>
   <Line>
     <P Name="Name">HeatCmd</P>
-    <P Name="ZOrder">389</P>
+    <P Name="ZOrder">423</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">52355#out:1</P>
     <P Name="Points">[56, 0; 0, -20]</P>
@@ -1784,75 +1783,75 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">HeatCmd</P>
-    <P Name="ZOrder">390</P>
+    <P Name="ZOrder">424</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">52357#out:1</P>
     <P Name="Dst">8#in:1</P>
   </Line>
   <Line>
     <P Name="Name">BrakeForce</P>
-    <P Name="ZOrder">391</P>
+    <P Name="ZOrder">425</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">52358#out:1</P>
     <P Name="Dst">6#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Capacitor</P>
-    <P Name="ZOrder">392</P>
+    <P Name="ZOrder">426</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">55359#out:1</P>
     <P Name="Dst">55356#in:1</P>
   </Line>
   <Line>
     <P Name="Name">PwrCmd</P>
-    <P Name="ZOrder">395</P>
+    <P Name="ZOrder">429</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">24#out:2</P>
     <P Name="Points">[11, 0; 0, 150]</P>
     <Branch>
-      <P Name="ZOrder">394</P>
+      <P Name="ZOrder">428</P>
       <P Name="Points">[0, 110]</P>
       <P Name="Dst">55362#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">393</P>
+      <P Name="ZOrder">427</P>
       <P Name="Dst">55360#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">396</P>
+    <P Name="ZOrder">430</P>
     <P Name="Src">55361#out:1</P>
     <P Name="Points">[11, 0; 0, -15]</P>
     <P Name="Dst">55360#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">399</P>
+    <P Name="ZOrder">433</P>
     <P Name="Src">55360#out:1</P>
     <P Name="Points">[15, 0]</P>
     <Branch>
-      <P Name="ZOrder">398</P>
+      <P Name="ZOrder">432</P>
       <P Name="Dst">55362#in:2</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">397</P>
+      <P Name="ZOrder">431</P>
       <P Name="Dst">55894#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">400</P>
+    <P Name="ZOrder">434</P>
     <P Name="Src">55362#out:1</P>
     <P Name="Dst">55363#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Cap Pwr Cmd</P>
-    <P Name="ZOrder">401</P>
+    <P Name="ZOrder">435</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">55363#out:1</P>
     <P Name="Dst">55359#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Bat Pwr Cmd</P>
-    <P Name="ZOrder">402</P>
+    <P Name="ZOrder">436</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">55894#out:1</P>
     <P Name="Dst">8#in:2</P>
@@ -1918,7 +1917,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">2046061d-ef52-4cb6-823e-be880f0992b6</P>
     </Object>
-    <P Name="BDUuid" Class="char">07d99cdc-7e98-4776-8c5e-d6e2fcb250d1</P>
+    <P Name="BDUuid" Class="char">ff6f9986-c283-4439-bead-87f56b7b48ad</P>
   </Object>
 </WindowsInfo>
 
