@@ -43,8 +43,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-09T16:48:39Z</dcterms:created>
   <dc:creator>isaacito</dc:creator>
   <cp:lastModifiedBy>antaeug</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-08-21T09:55:19Z</dcterms:modified>
-  <cp:revision>2.7</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-08-21T10:48:08Z</dcterms:modified>
+  <cp:revision>2.8</cp:revision>
   <cp:version>R2023a</cp:version>
 </cp:coreProperties>
 
@@ -109,7 +109,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:2.7&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:2.8&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -1442,7 +1442,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <Block BlockType="Constant" Name="Constant1" SID="55361">
     <P Name="Position">[365, 330, 395, 360]</P>
     <P Name="ZOrder">26300</P>
-    <P Name="Value">0.9</P>
+    <P Name="Value">0.95</P>
   </Block>
   <Block BlockType="BusCreator" Name="Create1" SID="5">
     <PortCounts in="1" out="1"/>
@@ -1659,52 +1659,52 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Port">5</P>
   </Block>
   <Line>
-    <P Name="ZOrder">441</P>
+    <P Name="ZOrder">473</P>
     <P Name="Src">11#out:1</P>
     <P Name="Points">[41, 0]</P>
     <Branch>
-      <P Name="ZOrder">440</P>
+      <P Name="ZOrder">472</P>
       <P Name="Dst">10#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">439</P>
+      <P Name="ZOrder">471</P>
       <P Name="Points">[0, 55]</P>
       <P Name="Dst">24#in:1</P>
     </Branch>
   </Line>
   <Line>
     <P Name="Name">&lt;MotorSpd&gt;</P>
-    <P Name="ZOrder">442</P>
+    <P Name="ZOrder">474</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">23#out:1</P>
     <P Name="Dst">24#in:2</P>
   </Line>
   <Line>
     <P Name="Name">TrqCmd</P>
-    <P Name="ZOrder">443</P>
+    <P Name="ZOrder">475</P>
     <P Name="Labels">[-1, 1]</P>
     <P Name="Src">24#out:1</P>
     <P Name="Points">[293, 0; 0, 20]</P>
     <P Name="Dst">7#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">444</P>
+    <P Name="ZOrder">476</P>
     <P Name="Src">1#out:1</P>
     <P Name="Dst">11#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">445</P>
+    <P Name="ZOrder">477</P>
     <P Name="Src">4#out:1</P>
     <P Name="Dst">52358#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">446</P>
+    <P Name="ZOrder">478</P>
     <P Name="Src">2#out:1</P>
     <P Name="Dst">22#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Motor&gt;</P>
-    <P Name="ZOrder">447</P>
+    <P Name="ZOrder">479</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">22#out:1</P>
     <P Name="Points">[38, 0; 0, -25]</P>
@@ -1712,14 +1712,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">MotorSpdRef</P>
-    <P Name="ZOrder">448</P>
+    <P Name="ZOrder">480</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">9#out:1</P>
     <P Name="Dst">5#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Info</P>
-    <P Name="ZOrder">449</P>
+    <P Name="ZOrder">481</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">5#out:1</P>
     <P Name="Points">[90, 0]</P>
@@ -1727,7 +1727,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">Vehicle</P>
-    <P Name="ZOrder">450</P>
+    <P Name="ZOrder">482</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">6#out:1</P>
     <P Name="Points">[90, 0]</P>
@@ -1735,7 +1735,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">MotorDrive</P>
-    <P Name="ZOrder">451</P>
+    <P Name="ZOrder">483</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">7#out:1</P>
     <P Name="Points">[90, 0]</P>
@@ -1743,38 +1743,38 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">BatteryHV</P>
-    <P Name="ZOrder">452</P>
+    <P Name="ZOrder">484</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">8#out:1</P>
     <P Name="Dst">38#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;Battery&gt;</P>
-    <P Name="ZOrder">453</P>
+    <P Name="ZOrder">485</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">22#out:2</P>
     <P Name="Dst">55573#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">454</P>
+    <P Name="ZOrder">486</P>
     <P Name="Src">52338#out:1</P>
     <P Name="Dst">52355#in:1</P>
   </Line>
   <Line>
-    <P Name="ZOrder">455</P>
+    <P Name="ZOrder">487</P>
     <P Name="Src">52339#out:1</P>
     <P Name="Dst">52357#in:1</P>
   </Line>
   <Line>
     <P Name="Name">&lt;MotorTemp&gt;</P>
-    <P Name="ZOrder">456</P>
+    <P Name="ZOrder">488</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">23#out:2</P>
     <P Name="Dst">52352#in:1</P>
   </Line>
   <Line>
     <P Name="Name">HeatCmd</P>
-    <P Name="ZOrder">457</P>
+    <P Name="ZOrder">489</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">52355#out:1</P>
     <P Name="Points">[56, 0; 0, -20]</P>
@@ -1782,75 +1782,75 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   </Line>
   <Line>
     <P Name="Name">HeatCmd</P>
-    <P Name="ZOrder">458</P>
+    <P Name="ZOrder">490</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">52357#out:1</P>
     <P Name="Dst">8#in:1</P>
   </Line>
   <Line>
     <P Name="Name">BrakeForce</P>
-    <P Name="ZOrder">459</P>
+    <P Name="ZOrder">491</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">52358#out:1</P>
     <P Name="Dst">6#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Capacitor</P>
-    <P Name="ZOrder">460</P>
+    <P Name="ZOrder">492</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">55359#out:1</P>
     <P Name="Dst">55356#in:1</P>
   </Line>
   <Line>
     <P Name="Name">PwrCmd</P>
-    <P Name="ZOrder">463</P>
+    <P Name="ZOrder">495</P>
     <P Name="Labels">[0, 0]</P>
     <P Name="Src">24#out:2</P>
     <P Name="Points">[111, 0; 0, 150]</P>
     <Branch>
-      <P Name="ZOrder">462</P>
+      <P Name="ZOrder">494</P>
       <P Name="Points">[0, 110]</P>
       <P Name="Dst">55362#in:1</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">461</P>
+      <P Name="ZOrder">493</P>
       <P Name="Dst">55360#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">464</P>
+    <P Name="ZOrder">496</P>
     <P Name="Src">55361#out:1</P>
     <P Name="Points">[11, 0; 0, -15]</P>
     <P Name="Dst">55360#in:2</P>
   </Line>
   <Line>
-    <P Name="ZOrder">467</P>
+    <P Name="ZOrder">499</P>
     <P Name="Src">55360#out:1</P>
     <P Name="Points">[15, 0]</P>
     <Branch>
-      <P Name="ZOrder">466</P>
+      <P Name="ZOrder">498</P>
       <P Name="Dst">55362#in:2</P>
     </Branch>
     <Branch>
-      <P Name="ZOrder">465</P>
+      <P Name="ZOrder">497</P>
       <P Name="Dst">55894#in:1</P>
     </Branch>
   </Line>
   <Line>
-    <P Name="ZOrder">468</P>
+    <P Name="ZOrder">500</P>
     <P Name="Src">55362#out:1</P>
     <P Name="Dst">55363#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Cap Pwr Cmd</P>
-    <P Name="ZOrder">469</P>
+    <P Name="ZOrder">501</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">55363#out:1</P>
     <P Name="Dst">55359#in:1</P>
   </Line>
   <Line>
     <P Name="Name">Bat Pwr Cmd</P>
-    <P Name="ZOrder">470</P>
+    <P Name="ZOrder">502</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">55894#out:1</P>
     <P Name="Dst">8#in:2</P>
@@ -1916,7 +1916,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">2046061d-ef52-4cb6-823e-be880f0992b6</P>
     </Object>
-    <P Name="BDUuid" Class="char">c589b276-c22e-408d-b6d6-edc729d60a75</P>
+    <P Name="BDUuid" Class="char">e0d0b57b-87c5-4494-9e7c-aa4d7f4520e3</P>
   </Object>
 </WindowsInfo>
 
